@@ -11,6 +11,6 @@ class Referee(RefereeRank):
 
     DEFAULT_FUNCTION_NAME = "checkio"
     FUNCTION_NAMES = {
-        "python_3": "checkio",
+        "python_3": "non_unique_elements",
         "js_node": "nonUniqueElements"
     }
