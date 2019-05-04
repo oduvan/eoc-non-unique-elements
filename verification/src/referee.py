@@ -1,4 +1,5 @@
-from checkio_referee import RefereeRank
+from checkio_referee import RefereeRank, ENV_NAME
+
 
 
 import settings_env
@@ -11,6 +12,11 @@ class Referee(RefereeRank):
 
     DEFAULT_FUNCTION_NAME = "checkio"
     FUNCTION_NAMES = {
-        "python_3": "non_unique_elements",
+        "python_3": "checkio",
         "js_node": "nonUniqueElements"
+    }
+    ENV_COVERCODE = {
+        ENV_NAME.PYTHON: '''def cover(func, data):
+    return list(func(data))
+'''
     }
